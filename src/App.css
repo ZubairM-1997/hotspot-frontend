@@ -2,6 +2,73 @@
   text-align: center;
 }
 
+.time{
+  margin: auto;
+}
+
+.destinationCard{
+  color: black;
+  height: 50px;
+}
+
+
+span{
+  float: right;
+}
+
+.weatherimage{
+  height: 230px;
+  width: 200px;
+}
+
+.main-navigation{
+  display: flex;
+  padding: 10px;
+}
+
+.logo{
+  height: 100px;
+  width: 100px;
+  padding-right: 600px;
+  padding-left: 300px;
+}
+
+.weatherCard{
+  display: flex;
+  background-color: #f0f5fc;
+  margin: auto;
+  width: 800px;
+  font-size: 21px;
+  border-radius: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-style: solid;
+
+}
+
+.image{
+  height: 190px;
+  width: 250px;
+}
+
+.topStory{
+  background-color: white;
+  margin: auto;
+  border-radius: 20px;
+  height: 250px;
+  width: 450px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  background-color: #e6e6e6;
+  box-shadow: 12px 8px 4px black;
+}
+
+
+
+.liveclock{
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -31,3 +98,21 @@
     transform: rotate(360deg);
   }
 }
+
+.googleComponent{
+  width: 600px;
+  margin: auto;
+  height: 100px;
+  overflow: inherit;
+
+}
+
+.googleMaps{
+  margin: auto;
+  width: 450px;
+}
+
+.locationCard{
+  align-content: center;
+}
+
