@@ -3,6 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from "@material-ui/core/Button";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import logo from '../logo/12.png'
 
 const NavBar = (props) => {
 
@@ -34,9 +35,11 @@ const NavBar = (props) => {
 		<AppBar className="nav-header" position="static">
 			<Toolbar className="toolbar-header">
 
+				<img  className="logo" src={logo} />
 				<h1>
 					HotSpot
 				</h1>
+
 
 				<div className="links">{sessions()}</div>
 

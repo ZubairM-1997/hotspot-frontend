@@ -3,31 +3,38 @@ import React from 'react'
 export default class WeatherCard extends React.Component {
 
 
+
+
 	render() {
 		return(
 			<div className="weatherCard">
+				<h3><span>Wind: {this.props.currentWeather.windspeedMiles} mph <span class="dot">•</span> Precip {this.props.currentWeather.precipMM} % </span></h3>
+				<h2>Oberservation Time: {this.props.currentWeather.observation_time}</h2>
+				<h1>{this.props.currentWeather.temp_C} C</h1>
+				<h1>{this.props.currentWeather.temp_F} F</h1>
 
-			<div className="humidity">
-				<img className="weatherimage"src="https://image.flaticon.com/icons/svg/219/219816.svg"/>
-				<li>Humidty: {this.props.currentWeather.humidity} %</li>
-			</div>
+			<table>
+				<tr>
+					<td>HUMIDITY</td>
+					<td>CLOUD COVER</td>
+					<td>FEELS LIKE</td>
+					<td>PRESSURE</td>
 
-			<div className="temperature">
-				<img className="weatherimage" src="https://cdn2.iconfinder.com/data/icons/web-and-ui-15/20/749-512.png" />
-				<li>Temperature: {this.props.currentWeather.temp_C} C</li>
+				</tr>
+				<tr>
+					<td>{this.props.currentWeather.humidity} %</td>
+					<td>{this.props.currentWeather.cloudcover} %</td>
+					<td>{this.props.currentWeather.FeelsLikeC} C</td>
+					<td>{this.props.currentWeather.pressure}</td>
+				</tr>
+				<tr>
+					<td><img className="weatherimage" src="https://cdn1.iconfinder.com/data/icons/weather-line-icon-set-3/100/humidity-512.png"/></td>
+					<td><img className="weatherimage" src="https://image.flaticon.com/icons/svg/33/33415.svg"/></td>
+					<td><img className="weatherimage" src="https://cdn0.iconfinder.com/data/icons/apps-set/512/phone-app-seo-weather-forecast-cloud-feel-512.png"/></td>
+					<td><img className="weatherimage" src="https://cdn1.iconfinder.com/data/icons/transport-78/65/20-512.png"/></td>
 
-			</div>
-
-			<div className="wind">
-				<img className="weatherimage" src="https://icon-library.net//images/wind-speed-icon/wind-speed-icon-17.jpg"/>
-				<li>Wind Speed: {this.props.currentWeather.windspeedMiles} MPH</li>
-
-			</div>
-
-			<div className="feelslike">
-				<img className="weatherimage" src="https://cdn2.iconfinder.com/data/icons/unhappy-businessman/240/emotion-feeling-010-512.png"/>
-				<li>Feels like {this.props.currentWeather.FeelsLikeC} C </li>
-			</div>
+				</tr>
+			</table>
 
 			</div>
 		)

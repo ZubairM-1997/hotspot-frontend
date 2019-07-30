@@ -1,7 +1,7 @@
 import { DEFAULT_ECDH_CURVE } from "tls";
 
 const userURL = "http://localhost:5000/api/users"
-const destinationURL = "http://localhost:5000/api/destinations"
+const destinationURL = "http://localhost:5000/api/destinations/"
 const authURL = "http://localhost:5000/api/auth"
 
 export const createUser = (name, email, password) => {
@@ -48,6 +48,16 @@ export const getDestinations = () => {
 	}).then(resp => resp.json())
 }
 
+export const deleteDestination = (id) => {
+	return fetch(destinationURL + `${id}`, {
+		method: "DELETE",
+		headers: {
+			"x-auth-token": localStorage.token,
+			"Content-Type": "application/json"
+			}
+	}).then(resp => resp.json() )
+}
+
 
 
 
@@ -55,6 +65,7 @@ export default {
 	createUser,
 	authUser,
 	createDestination,
-	getDestinations
+	getDestinations,
+	deleteDestination
 }
 

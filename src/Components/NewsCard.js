@@ -24,7 +24,7 @@ export default class NewsCard extends React.Component {
 
 
 					<div className="topStoryText">
-						<span>{this.props.topStory.description}</span>
+						<p>{this.props.topStory.description}</p>
 					</div>
 			</div>
 
