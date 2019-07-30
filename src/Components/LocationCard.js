@@ -23,7 +23,13 @@ export default class LocationCard extends React.Component {
 		},
 		() => {
 			createDestination(this.state.name, this.state.location)
-			.then(resp => this.props.destinationFunc(resp))
+			.then(resp => {
+				if(resp.status === 200) {
+					this.props.destinationFunc(resp)
+				} else (
+					alert("Name is required")
+				)
+			})
 		})
 
 
