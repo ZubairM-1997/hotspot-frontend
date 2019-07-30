@@ -1,6 +1,7 @@
 import React from 'react'
 import TimeCard from './TimeCard'
 import News from '../Components/News'
+import Grid from '@material-ui/core/Grid';
 
 
 export default class Time extends React.Component {
@@ -36,7 +37,8 @@ export default class Time extends React.Component {
 
 	render() {
 		return(
-			<div class="time">
+			<div class="card">
+				<h2>Trending Tech News & Time</h2>
 				<TimeCard date={this.state.date} time={this.state.time} timeZone={this.state.timeZone} localTime={this.state.localTime}/>
 				<News countryCode={this.state.countryCode}/>
 

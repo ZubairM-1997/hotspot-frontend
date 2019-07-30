@@ -10,7 +10,7 @@ export default class DestinationCollection extends React.Component{
 		return(
 		<div className="destinationCollection">
 			{
-				this.props.names.map(name => <SavedDestinations destinationName={name}/>)
+				this.props.destinations.map(destination => <SavedDestinations remove={this.props.removeDestination} destination={destination}/>)
 			}
 		</div>
 

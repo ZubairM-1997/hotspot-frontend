@@ -34,10 +34,9 @@ export default class Weather extends React.Component {
 
 	render(){
 		return(
-			<div className="weather">
+			<div className="card">
+				<h2>Weather</h2>
 				<WeatherCard currentWeather={this.state.weather}/>
-
-
 			</div>
 		)
 	}

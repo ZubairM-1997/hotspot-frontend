@@ -23,9 +23,7 @@ export default class LocationCard extends React.Component {
 		},
 		() => {
 			createDestination(this.state.name, this.state.location)
-			.then(
-				this.props.destinationFunc(this.state.name)
-			)
+			.then(resp => this.props.destinationFunc(resp))
 		})
 
 
@@ -40,7 +38,7 @@ export default class LocationCard extends React.Component {
 			<div className="locationCard">
 				<h2>{this.props.areaName}</h2>
 				<li>Latitude: {this.props.lat}, Longitude: {this.props.long}</li>
-				<button onClick={this.handleOnClick}>Add this to your destination!</button>
+				<button className="appBtn" onClick={this.handleOnClick}>Add this to your destination!</button>
 			</div>
 
 		)

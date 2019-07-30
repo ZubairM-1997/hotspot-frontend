@@ -2,9 +2,7 @@
   text-align: center;
 }
 
-.time{
-  margin: auto;
-}
+
 
 .destinationCard{
   color: black;
@@ -17,8 +15,8 @@ span{
 }
 
 .weatherimage{
-  height: 230px;
-  width: 200px;
+  height: 200px;
+  width: 180px;
 }
 
 .main-navigation{
@@ -34,32 +32,41 @@ span{
 }
 
 .weatherCard{
-  display: flex;
   background-color: #f0f5fc;
   margin: auto;
   width: 800px;
   font-size: 21px;
   border-radius: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
   border-style: solid;
+}
 
+.temperature{
+  display: flex;
 }
 
 .image{
-  height: 190px;
-  width: 250px;
+  height: 250px;
+  width: 500px;
 }
 
 .topStory{
+  text-align: center;
   background-color: white;
   margin: auto;
   border-radius: 20px;
-  height: 250px;
-  width: 450px;
+  height: 100%;
+  width: 50%;
   overflow-x: scroll;
   overflow-y: scroll;
   background-color: #e6e6e6;
+  padding-bottom: 50px;
   box-shadow: 12px 8px 4px black;
+}
+
+.topStoryText{
+  font-size: 20px;
 }
 
 
@@ -67,6 +74,7 @@ span{
 .liveclock{
   font-size: 50px;
   font-family: 'Courier New', Courier, monospace;
+  position: relative;
 }
 
 .App-logo {
@@ -99,20 +107,108 @@ span{
   }
 }
 
-.googleComponent{
-  width: 600px;
-  margin: auto;
-  height: 100px;
-  overflow: inherit;
 
-}
 
 .googleMaps{
+
   margin: auto;
-  width: 450px;
+  width: 700px;
+  position: relative;
+}
+
+.collection{
+  position: absolute;
+  left: 710px;
+
+
 }
 
 .locationCard{
-  align-content: center;
+  text-align: center;
+  display: inline-grid;
+  background-color: bisque;
+  width: 500px;
+  align-content: flex-end;
+  padding: 15px;
 }
 
+.destinationCollection{
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 300px;
+  background-color: #f7a7a1;
+  border-radius: 15px;
+}
+
+.savedDestinations{
+  align-content: center;
+  background-color: 10px aliceblue;
+}
+
+.card{
+  position: relative;
+  text-align: center;
+  background-color: mistyrose;
+  box-shadow: 5px 10px 8px gainsboro;
+  height: 110%;
+  width: 100%;
+  font-size: 20px;
+}
+
+.clocks{
+  float: right;
+  padding-right: 200px;
+}
+
+
+.calendar{
+  margin: auto;
+
+  top: 100px;
+  position: relative;
+}
+
+form{
+  text-align: center;
+  font-size: 20px;
+}
+
+.nameCard{
+  text-align: center;
+}
+
+
+
+.appBtn{
+  color: black !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  width: 150px;
+  margin: auto;
+
+}
+
+.appBtn:hover{
+  background: beige;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.links{
+  margin: auto;
+}
+
+.logo{
+  padding: 10px;
+  width: 135px;
+  height: 135px;
+}
