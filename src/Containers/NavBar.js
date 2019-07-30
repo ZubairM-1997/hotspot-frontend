@@ -9,24 +9,26 @@ const NavBar = (props) => {
 
 	const sessions = () => {
 		return props.loggedin ?
-		(<Button variant="contained" color="primary" >
+		(<button className="appBtn" >
 			<Link onClick={props.signOut} className="Homepage-link" to="/">
 		  		Sign Out
 			</Link>
-	  	</Button>) : (
+	  	</button>) : (
 
 		<div>
-			<Button variant="contained" color="primary" >
+			<button className="appBtn" >
 				<Link className="Homepage-link" to="/login">
 					Sign In
 				</Link>
-			</Button>
+			</button>
+			<br/>
+			<br/>
 
-			<Button variant="contained" color="primary" >
+			<button className="appBtn" >
 				<Link  className="Homepage-link" to="/signup">
 					Sign Up
 				</Link>
-			</Button>
+			</button>
 		</div>
 		  )
 	}
