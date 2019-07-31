@@ -16,6 +16,7 @@ class App extends React.Component {
   }
 
 
+
   setToken = (userObj) => {
     this.setState({
       user: {...userObj},
@@ -29,6 +30,7 @@ class App extends React.Component {
   }
 
   signout = () => {
+    localStorage.removeItem("token")
     this.setState({
       user: {},
       email: "",

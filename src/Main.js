@@ -45,10 +45,6 @@ export default class Main extends React.Component{
 				<br/>
 				<br/>
 				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
               	<ElementContainer coordinates={this.state.coordinates}/>
 			</div>
 

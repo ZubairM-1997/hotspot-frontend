@@ -3,6 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
 import {createUser} from '../api'
+import logo from '../logo/12.png'
 
 export default class SignUp extends React.Component{
 
@@ -137,7 +138,13 @@ export default class SignUp extends React.Component{
 				SUBMIT
 				</Button>
 			</form>
+
         </div>
+		<div className="logoContainer">
+			<img className="logo" src={logo} />
+
+		</div>
+
       </div>
 
 		)

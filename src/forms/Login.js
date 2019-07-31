@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 
 import {authUser} from '../api'
 import { validate } from '@babel/types';
+import logo from '../logo/12.png'
 
 export default class LogIn extends React.Component {
 
@@ -65,35 +66,44 @@ export default class LogIn extends React.Component {
 
 	render() {
 		return(
-		<div className="signup-container">
-        <div className="signup-card">
-          <form onSubmit={this.handleSubmit}>
-            <h3>Log In</h3>
 
-            <TextField
-              label="Enter your email"
-              margin="normal"
-              name="email"
-			  onChange={this.handleEmailChange}
+		<div>
 
-            />
-            <br />
-            <TextField
-              label="Choose a Password"
-              margin="normal"
-              name="password"
-              type="password"
-			  onChange={this.handlePasswordChange}
-            />
 
-            <br />
-            <br />
-            <Button type="submit" variant="contained" color="primary">
-              SUBMIT
-            </Button>
-          </form>
-        </div>
-      </div>
+					<div className="signup-container">
+						<div className="signup-card">
+						<form onSubmit={this.handleSubmit}>
+							<h3>Log In</h3>
+
+							<TextField
+							label="Enter your email"
+							margin="normal"
+							name="email"
+							onChange={this.handleEmailChange}
+
+							/>
+							<br />
+							<TextField
+							label="Choose a Password"
+							margin="normal"
+							name="password"
+							type="password"
+							onChange={this.handlePasswordChange}
+							/>
+
+							<br />
+							<br />
+							<Button type="submit" variant="contained" color="primary">
+							SUBMIT
+							</Button>
+						</form>
+					</div>
+			</div>
+			<div className="logoContainer">
+						<img className="logo" src={logo} />
+			</div>
+		</div>
+
 		)
 	}
 }
