@@ -108,6 +108,7 @@ setDestination = (destination) => {
 					<Grid item xs={5}>
 						<div className="collection">
 							<LocationCard   destinationFunc={this.setDestination} areaName={this.state.area} long={this.props.map.long} lat={this.props.map.lat}/>
+							<br/>
 							<DestinationCollection removeDestination={this.removeDestination} destinations={this.state.currentDestinations}/>
 						</div>
 					</Grid>

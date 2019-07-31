@@ -6,7 +6,7 @@
 
 .destinationCard{
   color: black;
-  height: 50px;
+  height: 50%;
 }
 
 
@@ -15,8 +15,8 @@ span{
 }
 
 .weatherimage{
-  height: 200px;
-  width: 180px;
+  height: 20%;
+  width: 60%;
 }
 
 .main-navigation{
@@ -34,7 +34,8 @@ span{
 .weatherCard{
   background-color: #f0f5fc;
   margin: auto;
-  width: 800px;
+  height: 80%;
+  width: 90%;
   font-size: 21px;
   border-radius: 20px;
   font-family: 'Roboto', sans-serif;
@@ -47,8 +48,8 @@ span{
 }
 
 .image{
-  height: 250px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
 }
 
 .topStory{
@@ -112,30 +113,37 @@ span{
 .googleMaps{
 
   margin: auto;
-  width: 700px;
+  padding: 10px;
+  width: 140%;
   position: relative;
 }
 
 .collection{
   position: absolute;
-  left: 710px;
+  width: 30%;
+  left: 60%;
 
 
 }
 
 .locationCard{
   text-align: center;
-  display: inline-grid;
-  background-color: bisque;
-  width: 500px;
+  display: block;
+  background-color: sandybrown;
+  border: solid;
+  width: 120%;
   align-content: flex-end;
-  padding: 15px;
+  padding: 8px;
+  font-size: 12px;
 }
 
 .destinationCollection{
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 300px;
+  padding: 3px;
+  display: block;
+  overflow-y: scroll;
+  margin: auto;
+  height: 240px;
+  width: 120%;
   background-color: #f7a7a1;
   border-radius: 15px;
 }
@@ -143,14 +151,15 @@ span{
 .savedDestinations{
   align-content: center;
   background-color: 10px aliceblue;
+  font-size: 12px;
 }
 
 .card{
   position: relative;
   text-align: center;
-  background-color: mistyrose;
-  box-shadow: 5px 10px 8px gainsboro;
-  height: 110%;
+  background-color: #ff6e6e;
+  box-shadow: 7px 20px 10px #f7b823;
+  height: 100%;
   width: 100%;
   font-size: 20px;
 }
@@ -208,7 +217,17 @@ form{
 }
 
 .logo{
-  padding: 10px;
-  width: 135px;
-  height: 135px;
+  margin: 0;
+  height: 200px;
+  width: 200px;
+
+}
+
+@keyframes spin {0% {transform:rotate(360deg)} }
+
+.logoContainer{
+  display: block;
+  animation: spin infinite 10s;
+
+
 }
