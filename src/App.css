@@ -19,6 +19,12 @@ span{
   width: 60%;
 }
 
+.weatherimage:hover{
+  transform: rotateY(180deg);
+
+}
+
+
 .main-navigation{
   display: flex;
   padding: 10px;
