@@ -5,6 +5,9 @@ This is my client side for my final project I had completed at Flatiron School. 
 
 ![HotSpot Demo](gif/new.gif)
 
+## Before client setup 
+Before setting up the client side, we need to load the back-end portion of my project which is in another repository on my profile
+
 
 
 ## Installing 
