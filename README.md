@@ -13,7 +13,7 @@ npm install
 
 
 
-###Credits 
+### Credits 
 For this project, I had to use a combination of API's of which they are 
 1) Google Maps API, 
 2) Google Geocode
