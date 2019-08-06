@@ -6,8 +6,9 @@ This is my client side for my final project I had completed at Flatiron School. 
 ![HotSpot Demo](gif/new.gif)
 
 ## Before client setup 
-Before setting up the client side, we need to load the back-end portion of my project which is in another repository on my profile
+Before setting up the client side, we need to load the back-end portion of my project which is in another repository on my profile, the link is below, clone that repository and follow the instructions as stated on the README.
 
+https://github.com/ZubairM-1997/hotspot-backend
 
 
 ## Installing 
