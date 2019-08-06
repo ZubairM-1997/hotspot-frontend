@@ -1,4 +1,4 @@
-#Hotspot 
+#Hotspot#
 
 This is my client side for my final project I had completed at Flatiron School. I have called it HotSpot. The main aim of this app was to provide a service to users which allowed them to find the Map, Weather, Trending Technology news and Local time based on a user's search of a country.
 
