@@ -30,7 +30,7 @@
     "react-scripts": "3.0.1",
     "react-transition-group": "^4.2.1",
     "react-widgets": "^5.0.0-7",
-    "semantic-ui": "^2.4.2",
+    "semantic-ui": "^2.5.0",
     "semantic-ui-react": "^0.87.3",
     "simple-react-weather": "^1.0.1",
     "use-battery-hook": "^1.1.3",
